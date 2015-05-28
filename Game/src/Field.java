@@ -18,7 +18,7 @@ public class Field {
     }
 
     public void set(Player player) {
-        if (isEmpty() == true) {
+        if (isEmpty()) {
             this.isSet = true;
             this.value = player.getSign();
         } else {

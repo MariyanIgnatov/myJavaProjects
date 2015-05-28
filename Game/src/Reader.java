@@ -19,7 +19,7 @@ public class Reader {
             y = scanner.nextInt();
             if (isValid(x, y) == false)
                 System.out.println("--- Bad Input! Enter Again! The Coordinates must be between 0 and 2. ---");
-        } while (isValid(x, y) == false);
+        } while (!isValid(x, y));
         Point point = new Point(x, y);
         scanner.close();
         return point;

@@ -20,15 +20,14 @@ public class Board {
     }
 
     public boolean isFulled() {
-        int counter = 0;
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                if (board[i][j].isEmpty() == false) {
-                    counter++;
+                if (board[i][j].isEmpty() == true) {
+                    return false;
                 }
             }
         }
-        return counter == size * size;
+        return true;
     }
 
     public void printTable() {

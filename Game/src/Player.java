@@ -4,7 +4,6 @@ public class Player {
 
     private char sign;
 
-    // private Stack<Field> movies;
     public char getSign() {
         return sign;
     }
