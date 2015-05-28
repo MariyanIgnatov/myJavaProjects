@@ -22,7 +22,7 @@ public class Board {
     public boolean isFulled() {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
-                if (board[i][j].isEmpty() == true) {
+                if (board[i][j].isEmpty()) {
                     return false;
                 }
             }
