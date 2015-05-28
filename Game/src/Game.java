@@ -59,8 +59,7 @@ public class Game {
 
     private boolean checkForWin(Player player) {
 
-        if (diagonalCheck(player) || reverseDiagonalCheck(player) 
-                || rowCheck(player) || colomnCheck(player)) {
+        if (diagonalCheck(player) || reverseDiagonalCheck(player) || rowCheck(player) || colomnCheck(player)) {
             return true;
         }
 
