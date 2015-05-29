@@ -20,13 +20,13 @@ public class Game {
 
     private Player someoneWins() {
         // player One
-        if (checkForWin(playerOne)) {
+        if (checkForWinner(playerOne)) {
             return playerOne;
         }
 
         // player Two
 
-        if (checkForWin(playerTwo)) {
+        if (checkForWinner(playerTwo)) {
             return playerTwo;
         }
 
@@ -57,13 +57,8 @@ public class Game {
 
     }
 
-    private boolean checkForWin(Player player) {
-
-        if (diagonalCheck(player) || reverseDiagonalCheck(player) || rowCheck(player) || colomnCheck(player)) {
-            return true;
-        }
-
-        return false;
+    private boolean checkForWinner(Player player) {
+        return diagonalCheck(player) || reverseDiagonalCheck(player) || rowCheck(player) || colomnCheck(player);
     }
 
     private boolean diagonalCheck(Player player) {
